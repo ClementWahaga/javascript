@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <title>Document</title>
+</head>
+
+
+<body>
+    <h1>Transfer list</h1>
+    <span id="list1">
+        do learn
+        <ul id="do">
+            <input type="checkbox" name="javascript" >
+            <li>javascript</li>
+            <input type="checkbox" name="php" >
+            <li>php</li>
+            <input type="checkbox" name="c++">
+            <li>c++</li>
+            
+            <li></li>
+        </ul>
+    </span>
+    <button type="button"><i class="fas fa-arrow-alt-circle-down"></i></button>
+    <span id="list2">
+        knowledge
+        <ul id="know">
+            <input type="checkbox" name="HTML" >
+        <li>HTML</li>
+        <input type="checkbox" name="css" >
+        <li>css</li>
+        <input type="checkbox" name="python">
+        <li>python</li>
+        
+
+        <li></li>
+        </ul>
+    </span>
+
+
+
+
+
+    <script>
+        /*selecteur*/
+        const af = document.getElementById('do');
+        const f = document.getElementById('know');
+        const list1 = document.getElementById('list1');
+        const list2 = document.getElementById('list2');
+
+        let btn = document.getElementsByTagName('submit')
+            /*ecouteur*/
+        af.addEventListener('button', check);
+
+
+        /*function*/
+        function check() {
+            let i = document.elements('do');
+            i.document.add('list2');
+            i.appendChild('')
+
+
+
+
+
+
+
+        }
+    </script>
+</body>
+
+</html>
