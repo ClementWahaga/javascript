@@ -1,0 +1,35 @@
+body {
+    display: grid;
+    grid-template-rows: 1, 1fr;
+    grid-gap: 25px;
+}
+
+h1 {
+    text-align: center;
+}
+
+span {
+    border: 2px solid black;
+    border-radius: 5px 5px;
+    display: grid;
+    justify-items: center;
+    margin-left: 25%;
+    margin-right: 25%
+}
+
+ul {
+    grid-template-columns: (3, 1fr);
+    border: 2px solid black;
+    border-radius: 5px 5px;
+    display: grid;
+    list-style: none;
+    align-content: center;
+}
+
+button {
+    font-size: 25px;
+    cursor: pointer;
+    background-color: white;
+    border: none;
+    padding: none;
+}
