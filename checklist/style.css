@@ -14,7 +14,8 @@ span {
     display: grid;
     justify-items: center;
     margin-left: 25%;
-    margin-right: 25%
+    margin-right: 25%;
+    background-color: rgba(0, 256, 155, 0.8)
 }
 
 ul {
@@ -24,6 +25,7 @@ ul {
     display: grid;
     list-style: none;
     align-content: center;
+    background-color: rgba(155, 156, 269, 0.8)
 }
 
 button {
@@ -32,4 +34,6 @@ button {
     background-color: white;
     border: none;
     padding: none;
+    margin-left: 50%;
+    width: 25px;
 }

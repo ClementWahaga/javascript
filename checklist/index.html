@@ -16,26 +16,26 @@
     <span id="list1">
         do learn
         <ul id="do">
-            <input type="checkbox" name="javascript" >
-            <li>javascript</li>
-            <input type="checkbox" name="php" >
-            <li>php</li>
-            <input type="checkbox" name="c++">
-            <li>c++</li>
+            
+            <li><input type="checkbox" name="javascript"id='c' >javascript</li>
+            
+            <li><input type="checkbox" name="php" id='c'>php</li>
+            
+            <li><input type="checkbox" name="c++"id='c'>c++</li>
             
             <li></li>
         </ul>
     </span>
-    <button type="button"><i class="fas fa-arrow-alt-circle-down"></i></button>
+    <button type="button" onclick="check"><i class="fas fa-arrow-alt-circle-down"></i></button>
     <span id="list2">
         knowledge
         <ul id="know">
-            <input type="checkbox" name="HTML" >
-        <li>HTML</li>
-        <input type="checkbox" name="css" >
-        <li>css</li>
-        <input type="checkbox" name="python">
-        <li>python</li>
+            
+        <li><input type="checkbox" name="HTML" id='c'>HTML</li>
+        
+        <li><input type="checkbox" name="css"id='c' >css</li>
+        
+        <li><input type="checkbox" name="python"id='c'>python</li>
         
 
         <li></li>
@@ -46,7 +46,7 @@
 
 
 
-    <script>
+    <script type="text/javascript">
         /*selecteur*/
         const af = document.getElementById('do');
         const f = document.getElementById('know');
@@ -54,15 +54,18 @@
         const list2 = document.getElementById('list2');
 
         let btn = document.getElementsByTagName('submit')
-            /*ecouteur*/
+        let c = document.getElementsByTagName('checkbox')
+
+        /*ecouteur*/
         af.addEventListener('button', check);
 
 
         /*function*/
         function check() {
-            let i = document.elements('do');
-            i.document.add('list2');
-            i.appendChild('')
+            if (c == true) {
+                af.creatElement("do")
+                f.appendChild('list2')
+            }
 
 
 
