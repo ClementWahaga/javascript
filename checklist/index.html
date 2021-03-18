@@ -52,20 +52,17 @@
         const f = document.getElementById('know');
         const list1 = document.getElementById('list1');
         const list2 = document.getElementById('list2');
-
-        let btn = document.getElementsByTagName('submit')
-        let c = document.getElementsByTagName('checkbox')
+        const v = document.getElementById("c")
 
         /*ecouteur*/
-        af.addEventListener('button', check);
+        af.addEventListener('click', check);
 
 
         /*function*/
         function check() {
-            if (c == true) {
-                af.creatElement("do")
-                f.appendChild('list2')
-            }
+            let checked = (this, c, onclick)
+
+
 
 
 
