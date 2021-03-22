@@ -28,7 +28,7 @@ ul {
     background-color: rgba(155, 156, 269, 0.8)
 }
 
-button {
+input>i {
     font-size: 25px;
     cursor: pointer;
     background-color: white;

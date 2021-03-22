@@ -13,33 +13,28 @@
 
 <body>
     <h1>Transfer list</h1>
-    <span id="list1">
-        do learn
-        <ul id="do">
-            
-            <li><input type="checkbox" name="javascript"id='c' >javascript</li>
-            
-            <li><input type="checkbox" name="php" id='c'>php</li>
-            
-            <li><input type="checkbox" name="c++"id='c'>c++</li>
-            
-            <li></li>
-        </ul>
-    </span>
-    <button type="button" onclick="check"><i class="fas fa-arrow-alt-circle-down"></i></button>
-    <span id="list2">
-        knowledge
-        <ul id="know">
-            
-        <li><input type="checkbox" name="HTML" id='c'>HTML</li>
-        
-        <li><input type="checkbox" name="css"id='c' >css</li>
-        
-        <li><input type="checkbox" name="python"id='c'>python</li>
-        
 
-        <li></li>
-        </ul>
+
+    <span>do learn
+        <form id="form1" name="form" action="">
+            <input type="checkbox" name="javascript" id='c'>javascript
+            <input type="checkbox" name="php" id='c'>php
+            <input type="checkbox" name="c++" id='c'>c++
+        </form>
+    </span>
+
+    <input type="submit" name="submit" onclick="check">
+    <span>
+        knowledge
+        <form id="form2" name="form" action="">
+            
+            <input type="checkbox" name="HTML" id='a'>HTML
+        
+            <input type="checkbox" name="css"id='a' >css
+        
+            <input type="checkbox" name="python"id='a'>python
+        </form>
+    
     </span>
 
 
@@ -48,29 +43,28 @@
 
     <script type="text/javascript">
         /*selecteur*/
-        const af = document.getElementById('do');
-        const f = document.getElementById('know');
-        const list1 = document.getElementById('list1');
-        const list2 = document.getElementById('list2');
-        const v = document.getElementById("c")
+        var elt = document.getElementById('c');
+        var elta = document.getElementById('a')
 
-        /*ecouteur*/
-        af.addEventListener('click', check);
-
-
-        /*function*/
-        function check() {
-            let checked = (this, c, onclick)
+        function check(e) {
+            e.prevenDefault()
+            if (elt.checked == true) {
+                elt.insertBefore(elt.value)
 
 
 
-
-
-
-
-
-
+            }
         }
+
+        /*function
+        {
+            e.preventDefault();
+            if (form1.v.checked === true) {
+                alert("j ai clicker sur:", v)
+
+            }
+
+        }*/
     </script>
 </body>
 
