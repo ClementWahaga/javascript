@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Exercice_7</title>
+    <meta charset="UTF-8" />
+</head>
+
+<body>
+    <form>
+        <label for="shoeSize">Pointure : </label><input type="text" id="shoeSize" name="shoeSize" /><br/>
+        <label for="yearOfBirth">Année de naissance : </label><input type="text" id="yearOfBirth" name="yearOfBirth" /><br/>
+        <button id="submit" name="submit" onclick="mafonction">Valider</button>
+    </form>
+</body>
+<script>
+    function mafonction(e) {
+        e.preventDefault()
+        const size = document.getElementById("shoeSize").value
+        const yob = document.getElementById("yearOfBrith").value
+
+        let result = (double = size * 2,
+            add = double + 5,
+            mutliple = add * 50,
+            subtract = multiple - yob,
+            sum = subtract + 1799
+        )
+
+        if (result == true) {
+            alert("voici le resultat:" + result)
+
+        };
+    }
+</script>
+
+</html>
