@@ -13,5 +13,14 @@
         <button id="submit" name="submit">Valider</button>
     </form>
 </body>
+<script>
+    const firstNumber = document.getElementById('firstNumber');
+    const secondNumber = document.getElementById('secondNumber');
+
+    document.getElementById('submit').addEventListener('click', function(event) {
+        event.preventDefault();
+        alert(parseInt(firstNumber.value) % parseFloat(secondNumber.value));
+    })
+</script>
 
 </html>
