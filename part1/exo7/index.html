@@ -10,27 +10,29 @@
     <form>
         <label for="shoeSize">Pointure : </label><input type="text" id="shoeSize" name="shoeSize" /><br/>
         <label for="yearOfBirth">Année de naissance : </label><input type="text" id="yearOfBirth" name="yearOfBirth" /><br/>
-        <button id="submit" name="submit" onclick="mafonction">Valider</button>
+        <button id="submit" name="submit">Valider</button>
     </form>
-</body>
-<script>
-    function mafonction(e) {
-        e.preventDefault()
-        const size = document.getElementById("shoeSize").value
-        const yob = document.getElementById("yearOfBrith").value
-
-        let result = (double = size * 2,
-            add = double + 5,
-            mutliple = add * 50,
-            subtract = multiple - yob,
-            sum = subtract + 1799
-        )
-
-        if (result === true) {
+    <script>
+        document.getElementById("submit").addEventListener("click", function(e) {
+            e.preventDefault
+            var size = document.getElementById("shoeSize").value;
+            var yob = document.getElementById("yearOfBrith").value
+            calcul(size, yob)
             alert("voici le resultat:" + result)
+        });
 
-        };
-    }
-</script>
+        function calcul(size, yob) {
+
+            let result = size * 2;
+            result = result + 5;
+            result = result * 50;
+            result = result - yob;
+            result = result + 1799;
+
+            return result;
+        }
+    </script>
+</body>
+
 
 </html>
