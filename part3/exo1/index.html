@@ -7,11 +7,15 @@
 </head>
 
 <body>
-    <img src="./pics1.jpg" id="image1" onmouseover="contour()" />
+    <img src="./pics1.jpg" id="image1" onmouseover="contour()" onmouseout="clean()" />
     <script>
         function contour() {
             document.getElementById('image1').style.border = 'solid red 3px'
 
+        }
+
+        function clean() {
+            document.getElementById('image1').style
         }
     </script>
 </body>
