@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Exercice 3</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div id="text">
+        <p class="para">
+            Tara, originellement nommée Antarctica puis Seamaster, est une goélette française destinée à la fois à l'exploration et à la défense de l'environnement. Dans le cadre de l'Année polaire internationale, en 2007-2008, ce voilier est utilisé en Arctique
+            par l'expédition Tara Arctic dans le but de faire des relevés permettant de mieux comprendre les changements climatiques qui s'opèrent en Arctique. En 2009, dans le cadre de l'expédition Tara Oceans, Tara parcourt les mers et les océans dans
+            une circumnavigation de trois ans afin d'étudier le piégeage des molécules de gaz carbonique (CO2) par les micro-organismes marins comme le plancton. En avril 2016, une nouvelle expédition est montée Tara Pacific dont l'objectif est de comprendre
+            le corail, menacé par des facteurs humains et climatiques1.
+        </p>
+    </div>
+    <div>
+        <div class="color green" id="g"></div>
+        <div class="color red" id="r"></div>
+        <div class="color blue" id="b"></div>
+    </div>
+
+    <script>
+        var p = document.querySelector('.para')
+        var div = p.parentNode;
+        var g = document.getElementById('g')
+        var r = document.getElementById('r')
+        var b = document.getElementById('b')
+
+        g.addEventListener('click', change)
+        r.addEventListener('click', change1)
+        b.addEventListener('click', change2)
+
+        function change() {
+
+            div.style.backgroundColor = 'green'
+        }
+
+        function change1() {
+
+            div.style.backgroundColor = 'red'
+        }
+
+        function change2() {
+            div.style.backgroundColor = 'blue'
+        }
+    </script>
+</body>
+
+
+</html>
