@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="app.js">
+</head>
+
+<body>
+    <button id="btn" type="button">button</button>
+    <input type="text" id="age" placeholder="How old are you" value="18">
+
+    <ul id=list style="cursor: pointer;">
+        <li>amour</li>
+        <li>amitié</li>
+        <li>haine</li>
+    </ul>
+
+    <script>
+        const btn = document.getElementById('btn');
+        const age = document.getElementById('age');
+        const list = document.getElementById('list')
+
+
+
+        btn.addEventListener('click', function() {
+            if (age.value >= 18) {
+                console.log('ok')
+            } else {
+                console.log('Not ok')
+            };
+
+        });
+        list.addEventListener('click', function(event) {
+            if (event.target.innerText === 'amour') {
+                alert('oui')
+            } else if (event.target.innerText === 'amitié') {
+                alert('oui,mais')
+            } else if (event.target.innerText === 'haine') {
+                alert('jamais')
+            }
+
+
+
+        })
+    </script>
+</body>
+
+</html>
